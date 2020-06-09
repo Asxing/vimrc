@@ -1,0 +1,13 @@
+let mapleader = ","
+inoremap jk <esc>
+nnoremap <leader>r :action renameElement<CR>
+
+" 插件模拟
+" surround
+set surround
+" multiple-cursors
+set multiple-cursors
+" easyMotion 模拟，额外依赖插件：AceJump,IdeaVim-EasyMotion
+set easymotion
+" 注释插件模拟
+set commentary
