@@ -64,9 +64,5 @@ endif
 :iabbrev <buffer> --- &mdash;
 :autocmd FileType javascript :iabbrev <buffer> iff if ()<left>
 :autocmd FileType python :iabbrev <buffer> iff if:<left>
-:augroup testgroup
-:	autocmd BufWrite * :echom "Foo"
-: 	autocmd BufWrite * :echom "Bar"
-:augroup END
 
 
