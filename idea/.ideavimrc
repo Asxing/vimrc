@@ -1,6 +1,12 @@
-let mapleader = ","
+let mapleader = " "
+
+map <leader>wq :wq<CR>
+
 inoremap jk <esc>
+
 nnoremap <leader>r :action renameElement<CR>
+
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 
 " 插件模拟
 " surround
