@@ -53,42 +53,14 @@ if has('syntax') && has('eval')
 endif
 
 " customize my vim 
-let mapleader = "\<space>" 
-let maplocalleader = "-"
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-inoremap jk <esc>
+:let mapleader = ","
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+:inoremap jk <esc>
 " :inoremap <esc> <nop>
-autocmd BufWritePre,BufRead *.html :normal gg=G
-autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
-autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
-iabbrev <buffer> --- &mdash;
-autocmd FileType javascript :iabbrev <buffer> iff if ()<left>
-autocmd FileType python :iabbrev <buffer> iff if:<left>
-" Vimscript file settings -------- {{{
-augroup filetype_vim
-  autocmd!
-  autocmd FileType vim setlocal foldmethod=marker
-augroup END
-" }}}
-
-" varg function setting ---- {{{
-function Varg(...)
-  echom a:0
-  echom a:1
-  echo a:000
-endfunction
-
-function Assign(foo)
-  let foo_tmp = a:foo
-  let foo_tmp = "test"
-  echom foo_tmp
-endfunction
-" }}}
-
-nnoremap <leader>;  mqA;<esc>`q
-" :nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
-
-
-
+:autocmd BufWritePre,BufRead *.html :normal gg=G
+:autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
+:autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
+:iabbrev <buffer> --- &mdash;
+:autocmd FileType javascript :iabbrev <buffer> iff if ()<left>
+:autocmd FileType python :iabbrev <buffer> iff if:<left>
