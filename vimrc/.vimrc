@@ -1,6 +1,9 @@
 " 开启锁进
 filetype plugin indent on
 
+" 设置行号
+set number
+
 " 设置自己Leader键
 let mapleader = "\<space>" 
 let maplocalleader = "-"
@@ -99,6 +102,11 @@ Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
 Plug 'chun-yang/auto-pairs'
 Plug 'mhinz/vim-startify'
+Plug 'mzlogin/vim-markdown-toc'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'godlygeek/tabular'
+Plug 'raimondi/delimitmate'
 
 call plug#end()
 
