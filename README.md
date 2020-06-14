@@ -5,5 +5,3 @@
 官方参考文档：http://vimdoc.sourceforge.net/htmldoc/scroll.html#zz
 
 官方自带文档查看：`vimtutor zh`
-
-
